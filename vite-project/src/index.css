@@ -70,16 +70,20 @@ color: #FFFFFF;
 main {
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 962;
     height: auto;
 }
 
 .managament-hall {
+    display: flex;
+    position: relative;
     min-width: 962px;
     height: auto;
+    margin-bottom: 170px;
 }
-.managament-hall-title {
+
+/*-----------Title-------------------------*/
+.wrapper-title {
  
 display: flex;
 position: relative;
@@ -90,15 +94,14 @@ width: 962px;
 max-height: 95px;
 justify-content: center;
 background: #63536C;
-
-
 }
 
-
-.managament-hall::before {
+.connecting-blocks::before {
 content: " ";  
 position: absolute;
 width: 2px;
+height: 310px;
+
 left: 60px;
 top: 66px;
 bottom: 0px;
@@ -108,8 +111,7 @@ z-index: 1;
 }
 
   
-.managament-hall-title::before {
-/* ::before */
+.wrapper-title::before {
 content: "";
 display: flex;
 box-sizing: border-box;
@@ -120,11 +122,12 @@ left: 40px;
 background: #FFFFFF;
 border: 4px solid #BC95D6;
 border-radius: 50%;
+z-index: 2;
 
 
 }
 
-.managament-hall-arrow {
+.title-arrow {
 display: flex;
 position: absolute;
 width: 24px;
@@ -134,8 +137,7 @@ top: 40px;
 
 }
 
-.managament-hall-text {
-
+.title-text {
 display: flex;
 margin-left: 100px;
 align-items: flex-start;
@@ -148,14 +150,7 @@ height: 25px;
 
 }
 
-.managament-hall_text-text {
-    display: flex;
-
-}
-
 h2 {
-/* Управление залами */
-
 min-width: 242px;
 height: auto;
 font-family: 'Arial';
@@ -168,12 +163,7 @@ color: #FFFFFF;
 
 }
 
-.managament-hall-arrow::after {
-    display: flex;
-    width: 24px;
-    
-    height: 16;
-}
+/*-------------------Title---END--------------*/
 
 .choosing-hall {
  display: flex;
@@ -368,6 +358,11 @@ color: #FFFFFF;
 }
 
 
+.configuration-halls {
+
+    min-width: 962px;
+    height: auto;
+}
 
 
 
